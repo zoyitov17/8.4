@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Button from './components/todo-btn/todoBtn'
+import Button from './components/todo-btn/todo'
 
 function App() {
 

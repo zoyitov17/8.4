@@ -55,12 +55,13 @@ const TodoApp = () => {
           </button>
         </div>
       </div>
-      <ul className="mt-[50px]">
+      <h2 className="mt-[20px] text-[rgba(158,120,207,1)] text-lg">Tasks to do - {state.length}</h2>
+      <ul className="mt-[20px]">
         {state.map((todo) => (
           <li
             key={todo.id}
             className={`w-[100%] h-[50px] flex justify-between items-center rounded-lg p-2 mb-2 
-              ${todo.completed ? 'bg-[rgba(21,16,28,1)] text-[rgba(0,255,0,1)] line-through' : 'bg-[rgba(21,16,28,1)] text-[rgba(158,120,207,1)]'}`}
+              ${todo.completed ? 'bg-[rgba(21,28,16,1)] text-[rgba(0,255,0,1)] line-through' : 'bg-[rgba(21,16,28,1)] text-[rgba(158,120,207,1)]'}`}
           >
             <span
               className="flex-1"
